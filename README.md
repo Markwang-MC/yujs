@@ -1,15 +1,15 @@
-# YUJS, the least-amount-of-codes JS template
+# YUTJS, the least-amount-of-codes JS template
 
-YUJS was developed with only 31 rows of codes, making it not only easy to use in your developing, but also for you to read its source codes for study or something eles.
+YUTJS was developed with only 31 rows of codes, making it not only easy to use in your developing, but also for you to read its source codes for study or something eles.
 
-# Easyly transform from EJS to YUJS
+# Easyly transform from EJS to YUTJS
 
-It need little work for transforming from EJS to YUJS, because they has almost the same member functions and usages. See "Basic usage" part below for detailed examples.
+It need little work for transforming from EJS to YUTJS, because they has almost the same member functions and usages. See "Basic usage" part below for detailed examples.
 
 ## Installation
 
 ```bash
-$ npm install yujs
+$ npm install yutjs
 ```
 
 ## Completely based on the JS built-in templates
@@ -26,7 +26,7 @@ So, for any JS programmers, writing a template dosen't need study new knowledage
 
   ```js
   var templateString = 'I love ${name}'
-  var template = yu.compile(templateString)
+  var template = yutjs.compile(templateString)
   template({name:'you'})
   ```
 
@@ -34,18 +34,18 @@ So, for any JS programmers, writing a template dosen't need study new knowledage
 
   ```js
   var templateString = 'I love ${name}'
-  yu.render(templateString,{'name':'you'})
+  yutjs.render(templateString,{'name':'you'})
   ```
 
   - `renderFileSync` function.
 
   ```js
-  yu.renderFileSync(templatePath,{content:'you are a smart person'})
+  yutjs.renderFileSync(templatePath,{content:'you are a smart person'})
   ```
 
   - `renderFile` function.
 
   ```js
-  yu.renderFile(templatePath,{content:'you are a smart person'},function (err,str) {
+  yutjs.renderFile(templatePath,{content:'you are a smart person'},function (err,str) {
   })
   ```
