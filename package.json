@@ -1,0 +1,23 @@
+{
+  "name": "yujs",
+  "version": "1.0.0",
+  "description": "the least-amount-of-codes JS template\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D yet\u001b[2~ \u001b[2~p\u001b[C\u001b[C\u001b[C\u001b[C\u001bpowerful JS template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Markwang-MC/yujs.git"
+  },
+  "keywords": [
+    "JS",
+    "TEMPLATE"
+  ],
+  "author": "XUANYU WANG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Markwang-MC/yujs/issues"
+  },
+  "homepage": "https://github.com/Markwang-MC/yujs#readme"
+}
