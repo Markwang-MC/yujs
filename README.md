@@ -21,10 +21,22 @@ So, for any JS programmers, writing a template dosen't need study new knowledage
 ```
 
 ## Basic usage
-
-  - `render` function.
-
   ```js
-  var templateString = 'I love ${name}'
-  yutjs(templateString).run({'name':'you'})
+  let Yutjs = require('yutjs')
+  let templateString = 'I love ${name}'
+  let yu = new Yutjs(templateString)
+  let html = yu.run({'name':'you'})
+  console.log(html)
+  //'I love you'
   ```
+
+## Render file
+
+```js
+let Yutjs = require('yutjs')
+let fs = require('fs')
+let template  = fs.readFileSync('template.yu')
+let yu = new Yutjs(template)
+let html = yu.run({'name':'you'})
+```
+
