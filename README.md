@@ -22,30 +22,9 @@ So, for any JS programmers, writing a template dosen't need study new knowledage
 
 ## Basic usage
 
-  - `compile` function.
-
-  ```js
-  var templateString = 'I love ${name}'
-  var template = yutjs.compile(templateString)
-  template({name:'you'})
-  ```
-
   - `render` function.
 
   ```js
   var templateString = 'I love ${name}'
-  yutjs.render(templateString,{'name':'you'})
-  ```
-
-  - `renderFileSync` function.
-
-  ```js
-  yutjs.renderFileSync(templatePath,{content:'you are a smart person'})
-  ```
-
-  - `renderFile` function.
-
-  ```js
-  yutjs.renderFile(templatePath,{content:'you are a smart person'},function (err,str) {
-  })
+  yutjs(templateString).run({'name':'you'})
   ```
